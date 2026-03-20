@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta name="theme-color" content="#ff6a00">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamburgueria Top</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* HEADER HERO */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+                url('https://images.unsplash.com/photo-1550547660-d9450f859349');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #ff6a00;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.btn {
+    padding: 10px 25px;
+    border: 2px solid #ff6a00;
+    background: transparent;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #ff6a00;
+    transform: scale(1.08);
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ff6a00;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255,106,0,0.3);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* CONTATO */
+.contato p {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hamburgueria Top 🍔</h1>
+    <p>Desde 1992 criando experiências inesquecíveis</p>
+</header>
+
+<nav>
+    <a href="#historia"><button class="btn">História</button></a>
+    <a href="#produtos"><button class="btn">Produtos</button></a>
+    <a href="#contato"><button class="btn">Contato</button></a>
+</nav>
+
+<section id="historia">
+    <h2>Nossa História</h2>
+    <p>
+        Fundada em 1992, a Hamburgueria Top nasceu em São Paulo com a missão de reinventar o hambúrguer artesanal.
+        Ao longo de mais de 30 anos, tornou-se referência em qualidade, inovação e sabor, conquistando milhares de clientes apaixonados.
+    </p>
+</section>
+
+<section id="produtos">
+    <h2>Produtos Premium</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Lanche Top 1</h3>
+            <p>Carne suculenta, queijo derretido e molho secreto da casa.</p>
+        </div>
+
+        <div class="card">
+            <h3>Lanche Top 2</h3>
+            <p>Bacon crocante, cheddar cremoso e pão artesanal tostado.</p>
+        </div>
+
+        <div class="card">
+            <h3>Lanche Top 3</h3>
+            <p>Blend especial, ingredientes premium e sabor marcante.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <h2>Contato</h2>
+
+    <p>📞 (11) 99999-9999</p>
+    <p>💬 WhatsApp: (11) 98888-8888</p>
+    <p>📍 Rua Exemplo, 123 - São Paulo</p>
+</section>
+
+<footer>
+    © 2026 Hamburgueria Top • Qualidade desde 1992
+</footer>
+
+    <script src="https://bots.easy-peasy.ai/chat.min.js" data-chat-url="https://bots.easy-peasy.ai/bot/36e790a1-5456-4dc9-9f0f-29d52e557907" data-btn-position="bottom-right" data-widget-btn-color="#6366f1 " defer> </script>
+</body>
+</html>
